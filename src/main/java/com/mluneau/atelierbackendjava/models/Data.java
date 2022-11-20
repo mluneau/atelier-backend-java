@@ -17,6 +17,10 @@ public class Data {
         return this.rank;
     }
     
+    public Integer getPoints() {
+        return this.points;
+    }
+
     public Integer getWeight() {
         return this.weight;
     }
