@@ -2,6 +2,7 @@ package com.mluneau.atelierbackendjava.models;
 
 
 public class Player {
+
     private Integer id;
     private String firstname;
     private String lastname;
@@ -10,27 +11,9 @@ public class Player {
     private Country country;
     private Data data;
 
-    // Constructors
-    public Player(Integer id, String firstname, String lastname, String shortname, Character sex, Country country, Data data) {
-       this.id = id;
-       this.firstname = firstname;
-       this.lastname = lastname;
-       this.shortname = shortname;
-       this.sex = sex;
-       this.country = country;
-       this.data = data; 
-    }
-
-    public Player(Player source) {
-        this.id = source.id;
-        this.firstname = source.firstname;
-        this.lastname = source.lastname;
-        this.shortname = source.shortname;
-        this.sex = source.sex;
-        this.country = new Country(source.country);
-        this.data = new Data(source.data);
-    }
-
+    // Constructor
+    public Player() {}
+    
     // Getters
     public Integer getId() {
         return this.id;

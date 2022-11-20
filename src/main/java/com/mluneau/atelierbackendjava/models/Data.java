@@ -1,6 +1,5 @@
 package com.mluneau.atelierbackendjava.models;
 
-
 public class Data {
 
     private Integer rank;
@@ -10,24 +9,8 @@ public class Data {
     private Integer age;
     private Integer[] last;
 
-    // Constructors
-    public Data(Integer rank, Integer points, Integer weight, Integer height, Integer age, Integer[] last) {
-        this.rank = rank;
-        this.points = points;
-        this.weight = weight;
-        this.height = height;
-        this.age = age;
-        this.last = last;
-    }
-
-    public Data(Data source) {
-        this.rank = source.rank;
-        this.points = source.points;
-        this.weight = source.weight;
-        this.height = source.height;
-        this.age = source.age;
-        this.last = source.last;
-    }
+    // Constructor
+    public Data() {}
 
     // Getters
     public Integer getRank() {
@@ -55,7 +38,7 @@ public class Data {
         this.rank = rank;
     }
 
-    public void setpoints(Integer points) {
+    public void setPoints(Integer points) {
         this.points = points;
     }
 

@@ -6,19 +6,8 @@ public class Country {
     private String picture;
     private CountryName name;
 
-
-    // Constructors
-    public Country(String code, String picture, CountryName name) {
-        this.code = code;
-        this.picture = picture;
-        this.name = name;
-    }
-
-    public Country(Country source) { 
-        this.code = source.code;
-        this.picture = source.picture;
-        this.name = source.name;
-    }
+    // Constructor
+    public Country() {}
 
     // Getters
     public String getCode() {

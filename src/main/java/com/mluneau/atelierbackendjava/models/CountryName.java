@@ -1,6 +1,6 @@
 package com.mluneau.atelierbackendjava.models;
 
-enum CountryName {
+public enum CountryName {
 
     SER ("Serbia"),
     USA ("United States of America"),
