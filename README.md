@@ -25,6 +25,6 @@ Try out the following routes:
 3. localhost:5000/stats
 
 ## Demo
-The project is deployed on Heroku, you can find it at this [here](https://pure-hollows-41519.herokuapp.com/api/v1/players)
+The project is deployed on Heroku, you can find it at this [here](https://atelier-backend-java.herokuapp.com/)
 
 Thank you.
