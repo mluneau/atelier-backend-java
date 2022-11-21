@@ -2,59 +2,59 @@ package com.mluneau.atelierbackendjava.models;
 
 public class Data {
 
-    private Integer rank;
-    private Integer points;
-    private Integer weight;
-    private Integer height;
-    private Integer age;
-    private Integer[] last;
+    private int rank;
+    private int points;
+    private int weight;
+    private int height;
+    private int age;
+    private int[] last;
 
     // Constructor
     public Data() {}
 
     // Getters
-    public Integer getRank() {
+    public int getRank() {
         return this.rank;
     }
     
-    public Integer getPoints() {
+    public int getPoints() {
         return this.points;
     }
 
-    public Integer getWeight() {
+    public int getWeight() {
         return this.weight;
     }
     
-    public Integer getHeight() {
+    public int getHeight() {
         return this.height;
     }
 
-    public Integer getAge() {
+    public int getAge() {
         return this.age;
     }
 
-    public Integer[] getLast() {
+    public int[] getLast() {
         return this.last;
     }
 
     // Settters
-    public void setRank(Integer rank) {
+    public void setRank(int rank) {
         this.rank = rank;
     }
 
-    public void setPoints(Integer points) {
+    public void setPoints(int points) {
         this.points = points;
     }
 
-    public void setWeight(Integer weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 
-    public void setHeight(Integer height) {
+    public void setHeight(int height) {
         this.height = height;
     }
 
-    public void setLast(Integer[] last) {
+    public void setLast(int[] last) {
         this.last = last;
     }
 

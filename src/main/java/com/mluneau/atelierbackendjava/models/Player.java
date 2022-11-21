@@ -12,6 +12,10 @@ public class Player implements Comparable<Player> {
 
     // Constructor
     public Player() {}
+
+    public Player(Player source) {
+        super();
+    } 
     
     // Getters
     public int getId() {
