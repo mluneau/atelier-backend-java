@@ -16,6 +16,15 @@ import java.util.ArrayList;
 @RequestMapping
 public class PlayerController {
 
+    @GetMapping(path="/")
+    public String welcomeMessage() throws IOException {
+        return "Welcome to this API which returns Tennis player statistics!"
+        + "<br>Please try reaching the following endpoints:"
+        + "<br>/api/v1/players"
+        + "<br>/api/v1/players/{id}" + "<span><i>Tip: look at a player id on the previous endpoint.</i>"
+        + "<br>/api/v1/stats";
+    }
+
     @GetMapping(path = "/api/v1/players")
     public ArrayList<Player> getPlayersByRank() throws IOException {
         return PlayerServices.getPlayers();
