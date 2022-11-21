@@ -4,7 +4,6 @@ public class Country {
 
     private String code;
     private String picture;
-    private CountryName name;
 
     // Constructor
     public Country() {}
@@ -18,10 +17,6 @@ public class Country {
         return this.picture;
     }
 
-    public CountryName getName() {
-        return this.name;
-    }
-
     // Setters
     public void setCode(String code) {
         this.code = code;
@@ -29,10 +24,6 @@ public class Country {
 
     public void setPicture(String picture) {
         this.picture = picture;
-    }
-
-    public void setName(CountryName name) {
-        this.name = name;
     }
 
 }

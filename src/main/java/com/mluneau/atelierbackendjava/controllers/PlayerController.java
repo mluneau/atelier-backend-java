@@ -4,18 +4,21 @@ import com.mluneau.atelierbackendjava.services.*;
 import com.mluneau.atelierbackendjava.models.*;
 
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.io.IOException;
-import java.util.List;
-
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.io.IOException;
+import java.util.ArrayList;
+
+
+@RestController
 @RequestMapping(path = "/api/v1/players")
 public class PlayerController {
 
     @GetMapping
-    public List<Player> getPlayersByRank() throws IOException {
+    public ArrayList<Player> getPlayersByRank() throws IOException {
         return PlayerServices.getPlayers();
     }
+
     
 }

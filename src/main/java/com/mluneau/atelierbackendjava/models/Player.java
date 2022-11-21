@@ -1,9 +1,8 @@
 package com.mluneau.atelierbackendjava.models;
 
+public class Player implements Comparable<Player> {
 
-public class Player {
-
-    private Integer id;
+    private int id;
     private String firstname;
     private String lastname;
     private String shortname;
@@ -15,7 +14,7 @@ public class Player {
     public Player() {}
     
     // Getters
-    public Integer getId() {
+    public int getId() {
         return this.id;
     }
 
@@ -44,7 +43,7 @@ public class Player {
     }
 
     // Setters --not needed for this exercice--
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -70,6 +69,11 @@ public class Player {
     
     public void setData(Data data) {
         this.data = data;
+    }
+
+    @Override
+    public int compareTo(Player o) {
+        return (this.getData().getRank() - o.getData().getRank());
     }
 
 }
